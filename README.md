@@ -41,7 +41,7 @@ Support:
 If you encounter any issues or have questions, please feel free to contact.
 
 Version History:
-Version 1.0: Initial release (Date: [Date])
+Version 1.0: Initial release (Date: [25/3/2024])
 
 Disclaimer:
 This project is provided as-is, without any warranty, express or implied. Use at your own risk.
