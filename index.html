@@ -3,23 +3,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body{
+            background-Image: linear-gradient(to right,#6b2cd5,#f97725)
+            /* background-image: linear-gradient(to left, rgb(250, 108, 3), rgb(249, 48, 143)); */
+            /* background-image: linear-gradient(to right, rgb(208, 141, 15), rgb(153, 15, 75)); */
+        }
+        .copyCode{
+            background-color: #fa6c03;
+            opacity: 75;
+            box-shadow: 5px;
+            border-radius: 2px;
+        }
+    </style>
 </head>
 <body>
-    <section>
-    <div>
-        <button id="color1">
+    <section class="card shadow-lg p-3 mb-5 bg-body rounded position-absolute top-50 start-50">
+    <div class="container-fluid card flex flex-row gap-5 ml-3 p-4 items-center">
+        <button id="color1" class="btn-lg btn btn-outline-success rounded">
             #fa6c03
         </button>
-        <button id="color2">
+        <button id="color2" class="btn-lg btn btn-outline-success rounded">
             #f84fae
         </button>
     </div>
-    <h2>Copy your code here</h2>
-    <div class="copyCode">
-        background-image:lininar-gradient(to right, rgb(92, 145 ,229), rg(12,63,198))
+    <span class="text-center">Copy your code here</span>
+    <div class="copyCode p-4 text-center">
+        background-image:lininar-gradient(to right, #fa6c03, #f84fae)
     </div>
 </section>
-<script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script> 
     let btn1=document.getElementById("color1");
     let btn2=document.getElementById("color2");
     let copyDiv = document.querySelector(".copyCode");
@@ -43,7 +59,7 @@
             copyDiv.innerHTML=`background-Image: linear-gradient(to right,${rgb},${rgb2})`;
         }
         
-      const handleButton2 =()=>{
+    const handleButton2 =()=>{
          rgb2=hexValues();
             console.log(rgb2);
             btn2.innerText=rgb2;
